@@ -154,7 +154,8 @@
         motion:constraintSetEnd="@+id/menu2" >
         <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
-    <ConstraintSet android:id="@+id/menu3" >
+    <ConstraintSet android:id="@+id/menu3"
+        motion:deriveConstraintsFrom="@+id/menu2">
 
         <Constraint
             android:id="@+id/logoMenu1"
@@ -239,7 +240,8 @@
         motion:constraintSetEnd="@+id/menu3" >
         <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
-    <ConstraintSet android:id="@+id/menu4" >
+    <ConstraintSet android:id="@+id/menu4"
+        motion:deriveConstraintsFrom="@+id/menu3">
         <Constraint
             android:id="@+id/logoMenu1"
             android:layout_width="0dp"
